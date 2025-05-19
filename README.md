@@ -1,1 +1,1 @@
-# poker-planning-app
+# poker-planning
