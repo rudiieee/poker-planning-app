@@ -102,7 +102,13 @@ function Room() {
         {players.map((p) => (
           <div key={p.name} className="p-2 border rounded">
             <p className="font-bold">{p.name}</p>
-            <p>{reveal ? p.vote ?? '–' : '❓'}</p>
+            <p>
+              {reveal
+                ? p.vote ?? '–'
+                : p.vote
+                  ? '✅'
+                  : '❓'}
+            </p>
           </div>
         ))}
       </div>
