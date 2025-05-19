@@ -9,7 +9,7 @@ import {
   getDoc
 } from 'firebase/firestore';
 
-const cardOptions = ['1', '2', '3', '5', '8', '13', '?'];
+const cardOptions = ['1', '2', '3', '5', '8', '13', '20', '40', '100', '?'];
 
 function Room() {
   const { roomId } = useParams();
